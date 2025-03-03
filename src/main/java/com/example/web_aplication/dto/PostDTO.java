@@ -8,6 +8,7 @@ public class PostDTO {
     private String title;
 
     @NotBlank(message = "Содержимое не может быть пустым")
+    @Column(length = 2000)      //ограничение длины поста
     private String content;
 
     @NotNull(message = "Автор не может быть null")
