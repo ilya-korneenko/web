@@ -31,4 +31,25 @@ public class PostController {
     public List<Post> getAllPosts(){
         return postService.getAllPosts();
     }
+
+    @Operation(summary = "Редактирование поста", description = "редактирует существующий пост")
+    @ApiResponse(responseCode = "200", description = "Пост успешно обнолен")
+    @PutMapping("/{id}")
+    public Post updatePost(@PathVariable Long id, @Valid @RequestBody PostDTO postDTO){
+        return postService.updatePost(id, postDTO);
+    }
+
+    @Operation(summary = "Удаление поста", description = "Удаляет пост по ID")
+    @ApiResponse(responseCode = "200", description = "Пост успешно удален")
+    @DeleteMapping("/{id}")
+    public void deletePost(@PathVariable Long id) {
+        postService.deletePost(id);
+    }
+
+    @Operation(summary = "Получение поста по ID", description = "Возвращает пост по id")
+    @ApiResponse(responseCode = "200", description = "Пост успешно найден")
+    @GetMapping("/{id}")
+    public void getPostById(@PathVariable Long id) {
+        postService.getPostById(id);
+    }
 }

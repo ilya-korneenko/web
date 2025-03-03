@@ -70,4 +70,10 @@ public class PostService {
         log.info("Пост успешно удален");
     }
 
+    public Post getPostById(Long id){
+        log.info("Получение поста с id: {}", id);
+        return postRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Пост с id " + id + " не найден"));
+    }
+
 }

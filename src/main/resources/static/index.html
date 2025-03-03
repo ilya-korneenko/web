@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Мой блог</h1>
+
+    <!-- Форма для создания поста -->
+    <div class="form-container">
+        <h2>Создать новый пост</h2>
+        <form id="createPostForm">
+            <input type="text" id="postTitle" placeholder="Заголовок" required>
+            <textarea id="postContent" placeholder="Содержимое" required></textarea>
+            <input type="number" id="postAuthorId" placeholder="ID автора" required>
+            <button type="submit">Создать пост</button>
+        </form>
+    </div>
+
+    <!-- Список постов -->
+    <div class="posts-container">
+        <h2>Посты</h2>
+        <ul id="postsList"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

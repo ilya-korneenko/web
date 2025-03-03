@@ -2,6 +2,7 @@ package com.example.web_aplication.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
@@ -18,7 +19,7 @@ public class Post {
     @NotBlank(message = "Содержимое не может быть пустым")
     private String content;
 
-    @NotBlank(message = "Автор не может быть null")
+    @NotNull(message = "Автор не может быть null")
     @ManyToOne
     @JoinColumn(name = "author_id")         //это было добавлено
     private User author;
