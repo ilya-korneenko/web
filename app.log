@@ -1,88 +1,60 @@
-2025-02-25T11:11:48.367+03:00  INFO 46755 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Starting WebAplicationApplication using Java 17.0.14 with PID 46755 (/home/ilya/my-website/web_aplication/target/classes started by ilya in /home/ilya/my-website/web_aplication)
-2025-02-25T11:11:48.370+03:00 DEBUG 46755 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-02-25T11:11:48.372+03:00  INFO 46755 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-02-25T11:11:49.156+03:00  INFO 46755 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25T11:11:49.228+03:00  INFO 46755 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
-2025-02-25T11:11:49.702+03:00  INFO 46755 --- [web_aplication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-02-25T11:11:49.713+03:00  INFO 46755 --- [web_aplication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-02-25T11:11:49.713+03:00  INFO 46755 --- [web_aplication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-02-25T11:11:49.756+03:00  INFO 46755 --- [web_aplication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-02-25T11:11:49.756+03:00  INFO 46755 --- [web_aplication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1303 ms
-2025-02-25T11:11:49.879+03:00  INFO 46755 --- [web_aplication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25T11:11:49.921+03:00  INFO 46755 --- [web_aplication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-02-25T11:11:49.968+03:00  INFO 46755 --- [web_aplication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-02-25T11:11:50.188+03:00  INFO 46755 --- [web_aplication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25T11:11:50.210+03:00  INFO 46755 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-02-25T11:11:50.450+03:00  INFO 46755 --- [web_aplication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30c8c6ab
-2025-02-25T11:11:50.452+03:00  INFO 46755 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-02-25T11:11:50.509+03:00  INFO 46755 --- [web_aplication] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-25T11:11:51.233+03:00  INFO 46755 --- [web_aplication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25T11:11:51.307+03:00  INFO 46755 --- [web_aplication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25T11:11:51.680+03:00  WARN 46755 --- [web_aplication] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25T11:11:51.698+03:00  WARN 46755 --- [web_aplication] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-03-03T08:38:48.521+03:00  INFO 14145 --- [web_aplication] [main] c.e.w.WebAplicationApplicationTests      : Starting WebAplicationApplicationTests using Java 17.0.14 with PID 14145 (started by ilya in /home/ilya/my-website/web_aplication)
+2025-03-03T08:38:48.531+03:00 DEBUG 14145 --- [web_aplication] [main] c.e.w.WebAplicationApplicationTests      : Running with Spring Boot v3.2.1, Spring v6.1.2
+2025-03-03T08:38:48.532+03:00  INFO 14145 --- [web_aplication] [main] c.e.w.WebAplicationApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-03-03T08:38:49.099+03:00  INFO 14145 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-03T08:38:49.145+03:00  INFO 14145 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 4 JPA repository interfaces.
+2025-03-03T08:38:49.540+03:00  INFO 14145 --- [web_aplication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-03T08:38:49.574+03:00  INFO 14145 --- [web_aplication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-03-03T08:38:49.598+03:00  INFO 14145 --- [web_aplication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-03T08:38:49.790+03:00  INFO 14145 --- [web_aplication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-03T08:38:49.811+03:00  INFO 14145 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-03T08:38:50.137+03:00  INFO 14145 --- [web_aplication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d96d434
+2025-03-03T08:38:50.139+03:00  INFO 14145 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-03T08:38:50.879+03:00  INFO 14145 --- [web_aplication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-03T08:38:51.030+03:00  INFO 14145 --- [web_aplication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-03T08:38:51.436+03:00  WARN 14145 --- [web_aplication] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-03T08:38:51.456+03:00  WARN 14145 --- [web_aplication] [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 1727d555-156f-4b86-a079-01c585f0e538
+Using generated security password: 14ca16df-60f7-4116-a13e-e93eae6bf305
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-02-25T11:11:51.709+03:00  INFO 46755 --- [web_aplication] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-02-25T11:11:52.062+03:00  WARN 46755 --- [web_aplication] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-25T11:11:52.210+03:00  INFO 46755 --- [web_aplication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-02-25T11:11:52.218+03:00  INFO 46755 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Started WebAplicationApplication in 4.588 seconds (process running for 5.195)
-2025-02-25T11:12:16.854+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-25T11:12:16.854+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-02-25T11:12:16.856+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-02-25T11:12:16.937+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-1] c.e.web_aplication.services.LikeService  : Создание лайка: com.example.web_aplication.dto.LikeDTO@6fc55aa0
-2025-02-25T11:12:17.026+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-1] c.e.web_aplication.services.LikeService  : Лайк успешно создан: com.example.web_aplication.model.Like@a3a3536
-2025-02-25T11:13:38.355+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-5] c.e.web_aplication.services.UserService  : Создание пользователя(юзера): com.example.web_aplication.dto.UserDTO@795f6191
-2025-02-25T11:13:38.370+03:00  INFO 46755 --- [web_aplication] [http-nio-8080-exec-5] c.e.web_aplication.services.UserService  : Юзер успешно создан: com.example.web_aplication.model.User@ffb59ab
-2025-02-25T11:32:53.442+03:00  INFO 46755 --- [web_aplication] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-02-25T11:32:53.445+03:00  INFO 46755 --- [web_aplication] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-02-25T11:32:53.451+03:00  INFO 46755 --- [web_aplication] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25T11:32:53.454+03:00  INFO 46755 --- [web_aplication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-02-25T11:32:53.462+03:00  INFO 46755 --- [web_aplication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-02-25T11:32:56.991+03:00  INFO 47465 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Starting WebAplicationApplication using Java 17.0.14 with PID 47465 (/home/ilya/my-website/web_aplication/target/classes started by ilya in /home/ilya/my-website/web_aplication)
-2025-02-25T11:32:56.993+03:00 DEBUG 47465 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Running with Spring Boot v3.4.2, Spring v6.2.2
-2025-02-25T11:32:56.994+03:00  INFO 47465 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : No active profile set, falling back to 1 default profile: "default"
-2025-02-25T11:32:57.842+03:00  INFO 47465 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25T11:32:57.902+03:00  INFO 47465 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
-2025-02-25T11:32:58.393+03:00  INFO 47465 --- [web_aplication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-02-25T11:32:58.406+03:00  INFO 47465 --- [web_aplication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-02-25T11:32:58.406+03:00  INFO 47465 --- [web_aplication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-02-25T11:32:58.452+03:00  INFO 47465 --- [web_aplication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-02-25T11:32:58.453+03:00  INFO 47465 --- [web_aplication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1413 ms
-2025-02-25T11:32:58.598+03:00  INFO 47465 --- [web_aplication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25T11:32:58.649+03:00  INFO 47465 --- [web_aplication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-02-25T11:32:58.685+03:00  INFO 47465 --- [web_aplication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-02-25T11:32:58.886+03:00  INFO 47465 --- [web_aplication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25T11:32:58.906+03:00  INFO 47465 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-02-25T11:32:59.139+03:00  INFO 47465 --- [web_aplication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b9d4b0
-2025-02-25T11:32:59.140+03:00  INFO 47465 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-02-25T11:32:59.201+03:00  INFO 47465 --- [web_aplication] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.41
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-25T11:32:59.977+03:00  INFO 47465 --- [web_aplication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25T11:33:00.051+03:00  INFO 47465 --- [web_aplication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25T11:33:00.402+03:00  WARN 47465 --- [web_aplication] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25T11:33:00.421+03:00  WARN 47465 --- [web_aplication] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-03-03T08:38:51.664+03:00  INFO 14145 --- [web_aplication] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60c68c7b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1315d910, org.springframework.security.web.context.SecurityContextHolderFilter@345d4ecb, org.springframework.security.web.header.HeaderWriterFilter@25cef4b3, org.springframework.web.filter.CorsFilter@7a79a5d6, org.springframework.security.web.authentication.logout.LogoutFilter@128ebca1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79f82fc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@554db19d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a5eb613, org.springframework.security.web.access.ExceptionTranslationFilter@75a5a912, org.springframework.security.web.access.intercept.AuthorizationFilter@16eca98a]
+2025-03-03T08:38:51.842+03:00  WARN 14145 --- [web_aplication] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-03T08:38:51.972+03:00  INFO 14145 --- [web_aplication] [main] c.e.w.WebAplicationApplicationTests      : Started WebAplicationApplicationTests in 3.658 seconds (process running for 4.324)
+2025-03-03T08:38:52.397+03:00  INFO 14145 --- [web_aplication] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-03T08:38:52.400+03:00  INFO 14145 --- [web_aplication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-03T08:38:52.407+03:00  INFO 14145 --- [web_aplication] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-03T08:39:10.012+03:00  INFO 14338 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Starting WebAplicationApplication using Java 21.0.6 with PID 14338 (/home/ilya/my-website/web_aplication/target/classes started by ilya in /home/ilya/my-website/web_aplication)
+2025-03-03T08:39:10.014+03:00 DEBUG 14338 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Running with Spring Boot v3.2.1, Spring v6.1.2
+2025-03-03T08:39:10.015+03:00  INFO 14338 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-03-03T08:39:10.760+03:00  INFO 14338 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-03T08:39:10.812+03:00  INFO 14338 --- [web_aplication] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2025-03-03T08:39:11.284+03:00  INFO 14338 --- [web_aplication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-03T08:39:11.296+03:00  INFO 14338 --- [web_aplication] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-03T08:39:11.296+03:00  INFO 14338 --- [web_aplication] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-03T08:39:11.340+03:00  INFO 14338 --- [web_aplication] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-03T08:39:11.340+03:00  INFO 14338 --- [web_aplication] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2025-03-03T08:39:11.469+03:00  INFO 14338 --- [web_aplication] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-03T08:39:11.516+03:00  INFO 14338 --- [web_aplication] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2025-03-03T08:39:11.553+03:00  INFO 14338 --- [web_aplication] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-03T08:39:11.718+03:00  INFO 14338 --- [web_aplication] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-03T08:39:11.747+03:00  INFO 14338 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-03T08:39:12.072+03:00  INFO 14338 --- [web_aplication] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1851c7d2
+2025-03-03T08:39:12.074+03:00  INFO 14338 --- [web_aplication] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-03T08:39:12.837+03:00  INFO 14338 --- [web_aplication] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-03T08:39:12.909+03:00  INFO 14338 --- [web_aplication] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-03T08:39:13.322+03:00  WARN 14338 --- [web_aplication] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-03T08:39:13.338+03:00  WARN 14338 --- [web_aplication] [main] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: f88872e4-7aeb-4e0b-898b-3d329eabc0db
+Using generated security password: 74243c7f-cc4a-434c-a485-8754685757d4
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-02-25T11:33:00.434+03:00  INFO 47465 --- [web_aplication] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-02-25T11:33:00.781+03:00  WARN 47465 --- [web_aplication] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-02-25T11:33:00.940+03:00  INFO 47465 --- [web_aplication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-02-25T11:33:00.952+03:00  INFO 47465 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Started WebAplicationApplication in 4.482 seconds (process running for 4.871)
+2025-03-03T08:39:13.558+03:00  INFO 14338 --- [web_aplication] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29682244, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3368cf02, org.springframework.security.web.context.SecurityContextHolderFilter@2c56e044, org.springframework.security.web.header.HeaderWriterFilter@510e0dd2, org.springframework.web.filter.CorsFilter@2e76ade9, org.springframework.security.web.authentication.logout.LogoutFilter@7e4a6afd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@153cf928, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4884350b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a3ab73a, org.springframework.security.web.access.ExceptionTranslationFilter@359fd0a2, org.springframework.security.web.access.intercept.AuthorizationFilter@4bca2a09]
+2025-03-03T08:39:13.683+03:00  WARN 14338 --- [web_aplication] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-03T08:39:13.819+03:00  INFO 14338 --- [web_aplication] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-03-03T08:39:13.827+03:00  INFO 14338 --- [web_aplication] [main] c.e.w.WebAplicationApplication           : Started WebAplicationApplication in 4.28 seconds (process running for 4.715)
+2025-03-03T08:39:24.711+03:00  INFO 14338 --- [web_aplication] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-03T08:39:24.711+03:00  INFO 14338 --- [web_aplication] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-03T08:39:24.715+03:00  INFO 14338 --- [web_aplication] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

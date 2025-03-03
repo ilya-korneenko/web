@@ -44,7 +44,30 @@ public class PostService {
         return postRepository.findAll();
     }
 
-//    public Post getPostByAuthor(String author){
-//        return postRepository.findByAuthor(author);
-//    }
+    public Post updatePost(Long id, PostDTO postDTO){
+        log.info("Редактирование поста с ID {}", id);
+
+        Post post = postRepository.findById(id)
+                .orElseThrow(()->new RuntimeException("Пост с id " + id + " не найден!"));
+
+        post.setTitle(postDTO.getTitle());
+        post.setContent(postDTO.getContent());
+
+        User author = userRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("Пользователь не найден"));
+        post.setAuthor(author);
+
+        Post updatedPost = postRepository.save(post);
+        log.info("Пост успешно обновлен: {}", updatedPost);
+        return updatedPost;
+    }
+
+    public void deletePost(Long id){
+        log.info("Удаление поста с id: {}", id);
+        Post post = postRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Пост с id " + id + " не найден"));
+        postRepository.delete(post);
+        log.info("Пост успешно удален");
+    }
+
 }
