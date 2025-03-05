@@ -3,10 +3,17 @@ package com.example.web_aplication.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
+//@Data             //позже все можно реализовать через lombook, но пока остается так
+//@Getter
+//@Setter
 @Entity
 public class Post {
     @Id
@@ -14,9 +21,11 @@ public class Post {
     private Long id;
 
     @NotBlank(message = "Заголовок не может быть пустым")
+    @Size(max = 255, message = "Заголовок не может превышать 255 символов")
     private String title;
 
     @NotBlank(message = "Содержимое не может быть пустым")
+    @Size(max = 2000, message = "Содержимое не может превышать 2000 символов")
     private String content;
 
     @NotNull(message = "Автор не может быть null")
@@ -63,9 +72,7 @@ public class Post {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+
 
 
 

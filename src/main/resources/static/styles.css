@@ -67,8 +67,54 @@ button:hover {
 
 #postsList li {
     background-color: #f8f9fa;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn, .like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.edit-btn:hover {
+    color: #007bff;
+}
+
+.delete-btn:hover {
+    color: #dc3545;
+}
+
+.like-btn:hover {
+    color: #dc3545;
+}
+
+.comments-section {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.comments-list li {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
 }

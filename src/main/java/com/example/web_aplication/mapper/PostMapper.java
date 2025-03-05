@@ -10,7 +10,7 @@ import org.mapstruct.factory.Mappers;
 public interface PostMapper {
     PostMapper INSTANCE = Mappers.getMapper(PostMapper.class);
 
-    @Mapping(target = "author", ignore = true)
+    @Mapping(target = "author", ignore = true)  // Игнорируем автора, чтобы установить его позже
     Post toEntity(PostDTO postDTO);
 
     PostDTO toDTO(Post post);

@@ -51,8 +51,29 @@ public class CommentService {
         return savedComment;
     }
 
+//    public Comment addComment(Long postId, Comment comment) {
+//        log.info("Создание комментария для поста ID: {}", postId);
+//
+//        Post post = postRepository.findById(postId)
+//                .orElseThrow(() -> new RuntimeException("Пост не найден"));
+//        comment.setPost(post);
+//
+//        User author = userRepository.findById(comment.getAuthor().getId())
+//                .orElseThrow(() -> new RuntimeException("Пользователь не найден"));
+//        comment.setAuthor(author);
+//
+//        Comment savedComment = commentRepository.save(comment);
+//        log.info("Комментарий успешно создан: {}", savedComment);
+//        return savedComment;
+//    }
+
     public List<Comment> getAllComments() {
         log.info("Получение всех комментарий");
         return commentRepository.findAll();
+    }
+
+    public List<Comment> getCommentsByPost(Long postId) {
+        log.info("Поиск комментариев для поста с ID {}", postId);
+        return commentRepository.findByPostId(postId);
     }
 }

@@ -34,6 +34,7 @@ public class PostService {
         User author = userRepository.findById(postDTO.getAuthorId())
                 .orElseThrow(() -> new RuntimeException("Пользователь не найден"));
         post.setAuthor(author);
+
         Post savedPost = postRepository.save(post);
         log.info("Пост успешно создан: {}", savedPost);
         return savedPost;
@@ -53,7 +54,9 @@ public class PostService {
         post.setTitle(postDTO.getTitle());
         post.setContent(postDTO.getContent());
 
-        User author = userRepository.findById(id)
+        log.info("Обновляемый authorId: {}", postDTO.getAuthorId());
+
+        User author = userRepository.findById(postDTO.getAuthorId())
                 .orElseThrow(()-> new RuntimeException("Пользователь не найден"));
         post.setAuthor(author);
 
